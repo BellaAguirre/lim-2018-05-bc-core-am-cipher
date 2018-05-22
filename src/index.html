@@ -9,10 +9,12 @@
     <h1>Bienvenido a su cifrador de mensaje</h1>
     <section>
       <div>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-        <input type="button" value="cifrar">
+          <label>Cantidad de Desplazamiento</label><input type="text" id="desplazar"><br><br>
+          <hr>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          <input type="submit" value="cifrar" onclick="cifrar()">
         <input type="button" value="descifrar">
-        <textarea name="resultado" id="resultado" cols="30" rows="10"></textarea>
+        <textarea name="resultado" id="resultado" cols="30" rows="10" disabled></textarea>
       </div>
     </section>
     <div id="root"></div>
