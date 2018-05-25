@@ -1,7 +1,6 @@
 window.cipher = {
   // ... 
   encode: (offset, string)=>{
-  debugger
   descifrado.innerHTML="";
   resultado="";
   for(let i=0;i<string.length;i++)
