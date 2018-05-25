@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 15c2bdaeb9e78eba9db93d15d1ebb8476eef802c
 let offset = document.getElementById('desplazar');
 let string = document.getElementById('mensaje');
 let descifrado = document.getElementById('resultado');
