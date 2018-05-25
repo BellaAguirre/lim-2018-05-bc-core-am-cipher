@@ -1,5 +1,6 @@
 window.cipher = {
   // ... 
+  //esta funcion cifra un texto 
     encode: (offset, string)=>{
         debugger
         descifrado.innerHTML="";
