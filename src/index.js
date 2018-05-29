@@ -7,9 +7,13 @@ let botonDecifrar = document.getElementById('decifrador');
 
 botonCifrar.addEventListener('click', function(e){
     e.preventDefault();
+    descifrado.innerHTML="";
+    resultado="";
     descifrado.innerHTML = window.cipher.encode(offset.value,string.value);
 });
 botonDecifrar.addEventListener('click', function(e){
     e.preventDefault();
+    descifrado.innerHTML="";
+    resultado="";
     descifrado.innerHTML = window.cipher.decode(offset.value,string.value);
 });

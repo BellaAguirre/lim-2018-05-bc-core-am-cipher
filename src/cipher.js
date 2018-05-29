@@ -1,8 +1,7 @@
 window.cipher = {
   // ... 
   encode: (offset, string)=>{
-  descifrado.innerHTML="";
-  resultado="";
+
   for(let i=0;i<string.length;i++)
   {
     let caracter = string.charCodeAt(i);
@@ -18,8 +17,7 @@ window.cipher = {
   },
 
   decode:(offset, string) =>{
-  descifrado.innerHTML="";
-  resultado="";
+
   for(let i=0;i<string.length;i++)
   {
       let caracter1 = string.toUpperCase().charCodeAt(i);
