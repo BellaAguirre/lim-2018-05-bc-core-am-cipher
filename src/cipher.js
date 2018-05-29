@@ -17,6 +17,8 @@ window.cipher = {
   },
 
   decode:(offset, string) =>{
+    
+  offset=(26-(offset%26))%26;
   for(let i=0;i<string.length;i++)
   {
       let caracter1 = string.charCodeAt(i);
