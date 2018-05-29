@@ -1,7 +1,7 @@
 window.cipher = {
   // ... 
   encode: (offset, string)=>{
-
+  let resultado="";  
   for(let i=0;i<string.length;i++)
   {
     let caracter = string.charCodeAt(i);
@@ -17,7 +17,7 @@ window.cipher = {
   },
 
   decode:(offset, string) =>{
-    
+  let resultado="";  
   offset=(26-(offset%26))%26;
   for(let i=0;i<string.length;i++)
   {
