@@ -17,15 +17,16 @@ window.cipher = {
   },
 
   decode:(offset, string) =>{
-
   for(let i=0;i<string.length;i++)
   {
-      let caracter1 = string.toUpperCase().charCodeAt(i);
-      if(caracter1===32){
-          resultado+=" ";
-      }else{
-          resultado+=String.fromCharCode((caracter1+65 -offset)% 26 +65);
-      }
+      let caracter1 = string.charCodeAt(i);
+      if(caracter1>=65 && caracter1<=90){
+        resultado+=String.fromCharCode((caracter1-65 +offset)% 26 +65);
+    }else if(caracter1>=97 && caracter1<=122){
+        resultado+=String.fromCharCode((caracter1-97 +offset)% 26 + 97);
+    }else{
+        resultado+=String.fromCharCode(caracter1);
+    }
   }
   return resultado;
   }
