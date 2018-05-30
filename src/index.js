@@ -1,7 +1,7 @@
 let offset = document.getElementById('desplazar');
 let string = document.getElementById('mensaje');
 let descifrado = document.getElementById('resultado');
-//let resultado = "";
+
 let botonCifrar = document.getElementById('cifrador');
 let botonDecifrar = document.getElementById('decifrador');
 
