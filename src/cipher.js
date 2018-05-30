@@ -14,34 +14,22 @@ window.cipher = {
       let caracter1 = string.charCodeAt(i);
       if(caracter1>=65 && caracter1<=90){
         resultado+=String.fromCharCode((caracter1-65 +parseInt(offset))% 26 +65);
-    }else if(caracter1>=97 && caracter1<=122){
+      }else if(caracter1>=97 && caracter1<=122){
         resultado+=String.fromCharCode((caracter1-97 +parseInt(offset))% 26 + 97);
-    }else{
+      }else{
         resultado+=String.fromCharCode(caracter1);
-    }
-  }
-  return resultado;
-  },
-<<<<<<< HEAD
-  createCipherWithOffset:(offset) => {
-    const result = {
-      encode: (string) => {
-        return cipher.encode(offset, string);
-      },
-      decode: (string) => {
-        return cipher.decode(offset, string);
       }
-=======
+    }
+    return resultado;
+  },
   createCipherWithOffset:(offset)=>{
    const result={
      encode(string){
       return cipher.encode(offset,string);
-     },
+      },
     decode(string){
       return cipher.decode(offset,string);
-     }
-     
->>>>>>> a809f65d7a15a6f1827506fef8d0add98759c8f3
+      }
     }
     return result;
   }
