@@ -46,23 +46,24 @@ describe('cipher', () => {
         it('decode deberia ser una propiedad', () => {
           assert.property(cipher.createCipherWithOffset(7),'decode','propiedad');
         });
+        describe('cipher.createCipherWithOffset().encode', () => {
+          it('deberia ser una funcion', () => {
+            assert.isFunction(cipher.createCipherWithOffset(7).encode,'function');
+          });
+          it('deberia retornar "hij" para "abc" con offset 33',() => {
+            assert.equal(cipher.createCipherWithOffset(7).encode('abc'),'hij');
+          });
+        });
+        describe('cipher.createCipherWithOffset().decode', () => {
+          it('deberia ser una funcion', () => {
+            assert.isFunction(cipher.createCipherWithOffset(7).decode,'function');
+          });
+          it('deberia retornar "abc" para "hij" con offset 33',() => {
+            assert.equal(cipher.createCipherWithOffset(7).decode('hij'),'abc');
+          });
+        });
     });
 
-    describe('cipher.createCipherWithOffset().encode', () => {
-      it('deberia ser una funcion', () => {
-        assert.isFunction(cipher.createCipherWithOffset(7).encode,'function');
-      });
-      it('deberia retornar "hij" para "abc" con offset 33',() => {
-        assert.equal(cipher.createCipherWithOffset(7).encode('abc'),'hij');
-      });
-    });
-    describe('cipher.createCipherWithOffset().decode', () => {
-      it('deberia ser una funcion', () => {
-        assert.isFunction(cipher.createCipherWithOffset(7).decode,'function');
-      });
-      it('deberia retornar "abc" para "hij" con offset 33',() => {
-        assert.equal(cipher.createCipherWithOffset(7).decode('hij'),'abc');
-      });
-    });
+    
   });
 });
