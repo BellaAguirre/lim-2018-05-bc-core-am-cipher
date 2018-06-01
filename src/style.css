@@ -38,6 +38,10 @@ fieldset{
     
     color: black;
 }
+boton{
+    
+    text-align: right;
+}
 label{
     font-size: 16px;
 }

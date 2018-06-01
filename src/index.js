@@ -28,7 +28,7 @@ btnDescifra.addEventListener('click',function(e){
     formPregunta.style.display='none';
     formCifrador.style.display='block';
     botonCifrar.style.display='none';
-    botonDecifrar.style.display = 'block';
+    botonDecifrar.style.display = 'inline block';
 });
 btnVolver.addEventListener('click', function(e){
     formPregunta.style.display = 'block';
