@@ -2,27 +2,49 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caesar Cipher</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
   </head>
   <body>
-    <div id="container">
-      <form>
+    <section>
+    <div class="container">
+      <form> 
         <h1>Bienvenido a su cifrador de mensaje</h1>
-        <label><b>Llave para el cifrado: </b></label><input type="number" id="desplazar" placeholder=" Ingrese un numero"><br><br>
+        <label><b>Llave para el cifrado: </b></label><input type="number" class="form-control" id="desplazar" min="0" placeholder=" Ingrese un numero" required>
         <hr>
         <fieldset>
           <h3>Mensaje a cifrar      </h3>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Escribe un mensaje aqui"></textarea><br>
-          <button id="cifrador">Cifrar</button> 
-          <button id="decifrador">Decifrar</button>   
+          <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Escribe un mensaje aqui" required></textarea><br>
+          <button class="btn btn-primary" id="cifrador">Cifrar</button> 
+          <button class="btn btn-success" id="decifrador">Decifrar</button>   
           <hr>
           <h3>Mensaje Cifrado</h3>
           <p id="resultado"></p>
-        </fieldset>
+        </fieldset> 
+        <div id="share-buttons">
+          <!-- Facebook -->
+          <a href="http://www.facebook.com/sharer.php?u=https://bellaaguirre.github.io/lim-2018-05-bc-core-am-cipher/src/" target="_blank">
+              <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+          </a>
+          <!-- Google+ -->
+          <a href="https://plus.google.com/share?url=https://bellaaguirre.github.io/lim-2018-05-bc-core-am-cipher/src" target="_blank">
+              <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+          </a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/share?url=https://bellaaguirre.github.io/lim-2018-05-bc-core-am-cipher/src" target="_blank">
+              <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+          </a>
+        </div>
       </form>
     <div id="root"></div>
     </div>
+    </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
