@@ -4,28 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caesar Cipher</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 
   </head>
   <body>
     <section>
-    <div class="container">
-      <form> 
-        <h1>Bienvenido a su cifrador de mensaje</h1>
-        <label><b>Llave para el cifrado: </b></label><input type="number" class="form-control" id="desplazar" min="0" placeholder=" Ingrese un numero" required>
+    <div id="containerMenu">
+        <form name="myform" novalidate>
+          <h1>Bienvenido a su cifrador de mensaje</h1>
+          <hr>
+          <h2>¿Que quieres ahora?</h2>
+          <input type="button" class="btn btn-primary btn-lg" id="cifrar" value="Cifrar">
+          <input type="button" class="btn btn-success btn-lg" id="descifra" value="Descifrar">
+      </form>
+    </div>
+    <div id="container">
+        <form name="myform" novalidate> 
+        <br>
+        <label><b>Ingresa tu clave: </b></label><input type="number" class="form-control" id="desplazar" min="0" placeholder=" Ingrese un numero" required>
         <hr>
         <fieldset>
-          <h3>Mensaje a cifrar      </h3>
+          <h3>   Escribe tu mensaje    </h3>
           <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Escribe un mensaje aqui" required></textarea><br>
           <button class="btn btn-primary" id="cifrador">Cifrar</button> 
           <button class="btn btn-success" id="decifrador">Decifrar</button>   
+          <button class="btn btn-danger" id="volver">Volver</button>
           <hr>
-          <h3>Mensaje Cifrado</h3>
-          <p id="resultado"></p>
+
         </fieldset> 
         <div id="share-buttons">
           <!-- Facebook -->
