@@ -36,14 +36,33 @@ btnVolver.addEventListener('click', function(e){
 });
 botonCifrar.addEventListener('click', function(e){//evento click para cifrar un mensaje
     e.preventDefault();
-    //mostrando el resultado de cifrar en el html
-    resultFinal= window.cipher.encode(offset.value, string.value);
-    string.value=resultFinal;
+    if(offset.value === '') {
+        document.getElementById('mensajeError').innerHTML = 'Ingresa un numero';
+        document.getElementById('errorText').innerHTML = '';
+    } else if(string.value.trim() === '') {
+        document.getElementById('mensajeError').innerHTML = '';
+        document.getElementById('errorText').innerHTML = 'ingresa un texto';
+    }else{
+        //mostrando el resultado de cifrar en el html
+        document.getElementById('mensajeError').innerHTML='';
+        document.getElementById('errorText').innerHTML='';
+        resultFinal= window.cipher.encode(offset.value, string.value);
+        string.value=resultFinal;
+    }
     
 });
 botonDecifrar.addEventListener('click', function(e){//evento click para descifrar un mensaje
     e.preventDefault();
-    
-    resultFinal = window.cipher.decode(offset.value, string.value);//mostrando el resultado de descifrar en el html
-    string.value=resultFinal;
+    if(offset.value === '') {
+        document.getElementById('mensajeError').innerHTML = 'Ingresa un numero';
+        document.getElementById('errorText').innerHTML = '';
+    } else if(string.value.trim() === '') {
+        document.getElementById('mensajeError').innerHTML = '';
+        document.getElementById('errorText').innerHTML = 'ingresa un texto';
+    }else{
+        document.getElementById('mensajeError').innerHTML='';
+        document.getElementById('errorText').innerHTML='';
+        resultFinal = window.cipher.decode(offset.value, string.value);//mostrando el resultado de descifrar en el html
+        string.value=resultFinal;
+    }
 });

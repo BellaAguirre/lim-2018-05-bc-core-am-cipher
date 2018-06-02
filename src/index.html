@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caesar Cipher</title>
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
@@ -13,7 +12,7 @@
   <body>
     <section>
     <div id="containerMenu">
-        <form name="myform" novalidate>
+        <form name="myformMenu" novalidate>
           <h1>Bienvenido a su cifrador de mensaje</h1>
           <hr>
           <h3>¿Que quieres hacer ahora?</h3>
@@ -24,11 +23,14 @@
     <div id="container">
         <form name="myform" novalidate> 
         <br>
-        <label><b>Ingresa tu clave: </b></label><input type="number" class="form-control" id="desplazar" min="0" placeholder=" Ingrese un numero" required>
+        <label><b>Ingresa tu clave: </b></label><input type="number" class="form-control" id="desplazar" min="0" placeholder=" Ingrese un numero" >
+        <p id="mensajeError"></p>
         <hr>
         <fieldset>
           <h3>   Escribe tu mensaje    </h3>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Escribe un mensaje aqui" required></textarea><br>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Escribe un mensaje aqui" required></textarea>
+          <p id="errorText"></p>
+          <br>
           <button class="btn btn-primary" id="cifrador">Cifrar</button> 
           <button class="btn btn-success" id="decifrador">Decifrar</button>   
           <button class="btn btn-danger" id="volver">Volver</button>
