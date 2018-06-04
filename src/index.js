@@ -1,19 +1,16 @@
 let offset = document.getElementById('desplazar');//variable para el offset
 let string = document.getElementById('mensaje');//variable para el string ingresado
 let resultFinal;//varible para mostrar el resultado de cifrar o descifrar
-
 //botones de inicio
 let btnCifra = document.getElementById('cifrar');
 let btnDescifra = document.getElementById('descifra');
 //form
 let formPregunta = document.getElementById('containerMenu');
 let formCifrador = document.getElementById('container');
-let btnVolver = document.getElementById('volver');
-
 // Botones dentro del formulario
 let botonCifrar = document.getElementById('cifrador');//variable para el boton cifrar
 let botonDecifrar = document.getElementById('decifrador');//variable para el boton descifrar
-
+let btnVolver = document.getElementById('volver');
 
 formCifrador.style.display = 'none';
 btnCifra.addEventListener('click', function(e){
@@ -30,7 +27,7 @@ btnDescifra.addEventListener('click',function(e){
     botonCifrar.style.display='none';
     botonDecifrar.style.display = 'inline block';
 });
-btnVolver.addEventListener('click', function(e){
+btnVolver.addEventListener('click', function(){
     formPregunta.style.display = 'block';
     formCifrador.style.display = 'none';
 });
