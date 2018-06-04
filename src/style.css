@@ -16,6 +16,7 @@ form{
     border: 1px solid #c1c1c1;
     margin-top: 5rem;
     max-width: 500px;
+    max-height: 500px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -37,8 +38,6 @@ fieldset{
     text-align: center;
     border: 0px;
     margin-top: 0px;
-    opacity: inherit;
-    
     color: black;
 }
 boton{
@@ -49,8 +48,6 @@ label{
     font-size: 16px;
 }
 body{
-    max-width: 100%;
-    max-height: 100%;
     background-image: url(https://ined21.com/wp-content/uploads/FONDO-DE-RESERVA-DE-GARANT%C3%8DA-EDUCATIVA-INED21.jpg);
     background-repeat: no-repeat;
     background-size: cover;
