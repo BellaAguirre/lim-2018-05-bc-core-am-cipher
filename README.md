@@ -38,7 +38,7 @@ Como vemos en la tercera imagen ya solamente vemos un solo boton que es el de Ci
 ![Pregunta](https://fotos.subefotos.com/b5a68a544da52f5abf49c8053ca1d500o.png "Formulario de pregunta")
 
 #### Formularios de Cifrar y Descifrar
-![Formulario](https://fotos.subefotos.com/5402438718c9169e1a5b73d4cbd5b04bo.png "Formularios cifrar y descifrar")
+![Formulario](https://fotos.subefotos.com/9eabd8aa53a75dcfc81c6cfb7ad33e97o.png "Formularios cifrar y descifrar")
  
 Finalmente se hizo pruebas con mis familiares y con Dani a los cuales les gusto el producto y ellos aportaron sobre que se podria añadir, es ahi que se puso un mini tutorial en el formulario de preguntas.
 
