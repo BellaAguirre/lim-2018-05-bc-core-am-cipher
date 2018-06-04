@@ -3,7 +3,7 @@
 Primero se hizo una planificacion donde se definieron ocho tareas generales que se deberian realizar, luego se dividio el proyecto en dos sprint.
 Se uso papelotes y tambien use trello.
 
-![Trello](http://thumbs.subefotos.com/6b5b210808bf76a04d95e2136ec86ff0o.jpg "Sprint Trello")
+![Trello](https://fotos.subefotos.com/6b5b210808bf76a04d95e2136ec86ff0o.png "Sprint Trello")
 
 ## Primer Sprint
  Para el primer sprint primero opte por realizar: la estructura html basica que deberia tener el proyecto, la funcion del cifrado, la funcion de descifrado y desplegar en gh-pages para obtener el link del proyecto.
