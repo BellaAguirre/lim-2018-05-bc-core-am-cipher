@@ -16,7 +16,6 @@ form{
     border: 1px solid #c1c1c1;
     margin-top: 5rem;
     max-width: 500px;
-    max-height: 500px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -35,13 +34,10 @@ form, fieldset{
     color: black;
 }
 fieldset{
-    text-align: center;
     border: 0px;
     margin-top: 0px;
-    color: black;
 }
 boton{
-    
     text-align: right;
 }
 label{
@@ -52,13 +48,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
 }
 #share-buttons img{
-padding: 5px;
-border: 0;
-box-shadow: 0;
-height: 45px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    height: 45px;
 }
 #share-buttons{
     text-align: right;

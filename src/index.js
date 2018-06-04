@@ -49,6 +49,7 @@ botonCifrar.addEventListener('click', function(e){
         document.getElementById('errorText').innerHTML = '';
         resultFinal = window.cipher.encode(offset.value, string.value);
         string.value = resultFinal;
+        document.forms['myform']['mensaje'].readOnly = true;
     }
     
 });
@@ -68,5 +69,6 @@ botonDecifrar.addEventListener('click', function(e){
         document.getElementById('errorText').innerHTML = '';
         resultFinal = window.cipher.decode(offset.value, string.value);
         string.value = resultFinal;
+        document.forms['myform']['mensaje'].readOnly = true;//bloquear textarea para no ingresar nada despues de descifrar
     }
 });
