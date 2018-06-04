@@ -3,6 +3,8 @@
 Para realizar el proyecto primero se hizo una planificacion, donde se definieron ocho tareas generales que se deberian realizar, luego se dividio el proyecto en dos sprint.
 Se uso papelotes y tambien use trello.
 
+![Papelote](https://fotos.subefotos.com/0bd874f61c4c18b5c7d725adb9cf8444o.jpg "Sprint Papelote")
+
 ![Trello](https://fotos.subefotos.com/6b5b210808bf76a04d95e2136ec86ff0o.png "Sprint Trello")
 
 ## Primer Sprint
@@ -37,8 +39,8 @@ Como vemos en la tercera imagen ya solamente vemos un solo boton que es el de Ci
 
 #### Formularios de Cifrar y Descifrar
 ![Imagen 1][1]  ![Imagen 2][2]
-[1]: https://fotos.subefotos.com/8831d5cf81d7cf17682ea38751207f64o.png "Cifrar" 
-[2]: https://fotos.subefotos.com/1e5ddc2eb03183ec24ed4b59f24d9419o.png "Descifrar"
+[1]: https://fotos.subefotos.com/8831d5cf81d7cf17682ea38751207f64o.png 
+[2]: https://fotos.subefotos.com/1e5ddc2eb03183ec24ed4b59f24d9419o.png
  
 Finalmente se hizo pruebas con mis familiares y con Dani a los cuales les gusto el producto y ellos aportaron sobre que se podria añadir, es ahi que se puso un mini tutorial en el formulario de preguntas.
 
