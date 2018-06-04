@@ -7,6 +7,9 @@ h3{
     margin-top: 0px;
     font-size: 20px;
 }
+h5{
+    text-align: left;
+}
 form{
     padding: 1em;
     background: #FCF3CF;

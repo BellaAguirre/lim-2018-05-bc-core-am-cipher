@@ -13,53 +13,60 @@ let botonDecifrar = document.getElementById('decifrador');//variable para el bot
 let btnVolver = document.getElementById('volver');
 
 formCifrador.style.display = 'none';
+//Evento click de los botones del menu
 btnCifra.addEventListener('click', function(e){
     e.preventDefault();
-    formPregunta.style.display='none';
-    formCifrador.style.display='block';
-    botonDecifrar.style.display='none';
+    formPregunta.style.display = 'none';
+    formCifrador.style.display = 'block';
+    botonDecifrar.style.display = 'none';
 });
 
-btnDescifra.addEventListener('click',function(e){
+btnDescifra.addEventListener('click', function(e){
     e.preventDefault();
-    formPregunta.style.display='none';
-    formCifrador.style.display='block';
-    botonCifrar.style.display='none';
+    formPregunta.style.display = 'none';
+    formCifrador.style.display = 'block';
+    botonCifrar.style.display = 'none';
     botonDecifrar.style.display = 'inline block';
 });
+//Evento click del boton de volver
 btnVolver.addEventListener('click', function(){
     formPregunta.style.display = 'block';
     formCifrador.style.display = 'none';
 });
-botonCifrar.addEventListener('click', function(e){//evento click para cifrar un mensaje
+//evento click para cifrar un mensaje
+botonCifrar.addEventListener('click', function(e){
     e.preventDefault();
+    //validando espacios vacios
     if(offset.value === '') {
-        document.getElementById('mensajeError').innerHTML = 'Ingresa un numero';
+        document.getElementById('mensajeError').innerHTML = 'Ingresa tu clave';
         document.getElementById('errorText').innerHTML = '';
     } else if(string.value.trim() === '') {
         document.getElementById('mensajeError').innerHTML = '';
-        document.getElementById('errorText').innerHTML = 'ingresa un texto';
+        document.getElementById('errorText').innerHTML = 'ingresa un mensaje';
     }else{
         //mostrando el resultado de cifrar en el html
-        document.getElementById('mensajeError').innerHTML='';
-        document.getElementById('errorText').innerHTML='';
-        resultFinal= window.cipher.encode(offset.value, string.value);
-        string.value=resultFinal;
+        document.getElementById('mensajeError').innerHTML = '';
+        document.getElementById('errorText').innerHTML = '';
+        resultFinal = window.cipher.encode(offset.value, string.value);
+        string.value = resultFinal;
     }
     
 });
-botonDecifrar.addEventListener('click', function(e){//evento click para descifrar un mensaje
+//evento click para descifrar un mensaje
+botonDecifrar.addEventListener('click', function(e){
     e.preventDefault();
+    //validando espacios vacios
     if(offset.value === '') {
-        document.getElementById('mensajeError').innerHTML = 'Ingresa un numero';
+        document.getElementById('mensajeError').innerHTML = 'Ingresa tu clave';
         document.getElementById('errorText').innerHTML = '';
     } else if(string.value.trim() === '') {
         document.getElementById('mensajeError').innerHTML = '';
-        document.getElementById('errorText').innerHTML = 'ingresa un texto';
+        document.getElementById('errorText').innerHTML = 'ingresa un mensaje';
     }else{
-        document.getElementById('mensajeError').innerHTML='';
-        document.getElementById('errorText').innerHTML='';
-        resultFinal = window.cipher.decode(offset.value, string.value);//mostrando el resultado de descifrar en el html
-        string.value=resultFinal;
+        //mostrando el resultado de descifrar en el html
+        document.getElementById('mensajeError').innerHTML = '';
+        document.getElementById('errorText').innerHTML = '';
+        resultFinal = window.cipher.decode(offset.value, string.value);
+        string.value = resultFinal;
     }
 });

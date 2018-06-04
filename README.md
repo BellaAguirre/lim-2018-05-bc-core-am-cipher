@@ -16,16 +16,33 @@ Para poder cifrar y descifrar estudie la forma en que trabaja el modelo del cifr
 Para el segundo sprint opte por las tareas de estilos, testing, validar los campos y redactar el README.
 En esta parte del proyecto si bien lo primero que se hizo fue el testing, este se completo en dos dias aproximadamente, donde se obtuvieron buenos resultados.
 
+![Sprint 2](http://subefotos.com/ver/?b685fc7d06e148e7a5b1bacc9fa34a21o.png "Segundo Sprint")
+
 Luego empeze con estilos los que darian vida visualmente al proyecto en esta parte se complico un poco debido a que se tenia que pensar en como el usuario lo tenia usar y si solucionaban su problema, primero se redujo algunos componentes de las interfaz, por ejemplo antes se mostraba en otro textarea el resultado, luego en una etiqueta parrafo, finalmente se concluyo que se debia mostrar en la misma caja de texto donde se ingreso el mensaje, quedando de la siguiente manera.
 
+#### Primer prototipo
 ![Imagen 1](https://fotos.subefotos.com/a3deaab61296126e3b96b432c893503do.png "Primer Protoripo")
 
+#### Segundo prototipo
 ![Imagen 2](https://fotos.subefotos.com/a851daf65804f762a68434eeb536be7co.png "Segundo Prototipo")
 
+#### Tercer prototipo
 ![Imagen 3](https://fotos.subefotos.com/8831d5cf81d7cf17682ea38751207f64o.png "Tercer Prototipo")
 
-Como vemos en la tercera imagen ya solamente vemos un solo boton que es el de Cifrar pues esto se hizo pensando el usuario, sabiendo que lo podria confundir sobre que tenia que hacer, llegando a la conclusion de que primero teniamos que consultarle que queria hacer para que luego al ingresar al formulario donde se cifra o se discifra solo tenga la opcion que desea realizar, quedando estos formularios asi,
+Como vemos en la tercera imagen ya solamente vemos un solo boton que es el de Cifrar pues esto se hizo pensando en el usuario, sabiendo que lo podria confundir sobre que tenia que hacer, llegando a la conclusion de que primero teniamos que consultarle que queria hacer para que luego al ingresar al formulario donde se cifra o se discifra solo tenga la opcion que desea realizar, quedando estos formularios asi,
 
+#### Formulario de pregunta
 
+![Pregunta](http://subefotos.com/ver/?b5a68a544da52f5abf49c8053ca1d500o.png "Formulario de pregunta")
+
+#### Formularios de Cifrar y Descifrar
+![Cifrar][1] ![Descifrar][2]
+[1]: http://subefotos.com/ver/?8831d5cf81d7cf17682ea38751207f64o.png "Cifrar"
+[2]: http://subefotos.com/ver/?1e5ddc2eb03183ec24ed4b59f24d9419o.png "Descifrar"
+ 
+Finalmente se hizo pruebas con mis familiares y con Dani a los cuales les gusto el producto y ellos aportaron sobre que se podria añadir, es ahi que se puso un mini tutorial en el formulario de preguntas.
+
+##### Link de proyecto
+<https://bellaaguirre.github.io/lim-2018-05-bc-core-am-cipher/src>
 
 

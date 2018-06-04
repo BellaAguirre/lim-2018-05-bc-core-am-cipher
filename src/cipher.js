@@ -23,6 +23,7 @@ window.cipher = {
   }
     return resultado;// retornamos el resultado obtenido
   },
+  //funcion del hacking edition retorna un objeto con dos funciones
   createCipherWithOffset: (offset) => {
     const result = {
       encode(string) {
