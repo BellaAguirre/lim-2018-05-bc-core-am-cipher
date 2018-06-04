@@ -28,6 +28,8 @@ textarea{
     border-radius: 18px;
     margin-bottom: 10px;
     width: 50%;
+    resize: none;
+
 }
 form, fieldset{
     text-align: center;
