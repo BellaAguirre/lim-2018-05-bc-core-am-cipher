@@ -1,65 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caesar Cipher</title>
-    <link rel="icon" href="https://fotos.subefotos.com/b6f4caa1db16745e76fb1d6e50ce25bco.png" >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="icon" href="https://fotos.subefotos.com/b6f4caa1db16745e76fb1d6e50ce25bco.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" />
   </head>
   <body>
     <section>
-    <div id="containerMenu">
-        <form name="myformMenu" novalidate>
-          <h1>Bienvenido a su revelador y encriptador de mensaje</h1>
-          <hr>
-          <h5>1. Si desea ocultar un mensaje presiona el boton <strong>cifrar</strong>.</h5>
-          <h5>2. Si desea revelar el secreto de un mensaje presiona el boton <strong>descifrar</strong>.</h5>
-          <h6>* Luego de cifrar solo debes copiar y mandarle a tu contacto el mensaje con su clave ;)</h6>
-          <hr>
-          <h3>Ahora, ¿Que quieres hacer?</h3>
-          <input type="button" class="btn btn-primary btn-lg" id="cifrar" value="Cifrar">
-          <input type="button" class="btn btn-success btn-lg" id="descifra" value="Descifrar">
-      </form>
-    </div>
-    <div id="container">
-        <form name="myform" novalidate> 
-        <br>
-        <label><b>Ingresa tu clave: </b></label><input type="number" class="form-control" id="desplazar" min="0" placeholder=" Ingrese un numero" >
-        <p id="mensajeError"></p>
-        <hr>
+      <form name="myform">
+        <!--Contenedor de menu pregunta--> 
+        <div id="container_menu">
+            <h1>Bienvenido a su revelador y encriptador de mensaje</h1>
+            <hr />
+            <p class="tutorial">1. Si desea ocultar un mensaje presiona el boton <strong>cifrar</strong>.</p>
+            <p class="tutorial">2. Si desea revelar el secreto de un mensaje presiona el boton <strong>descifrar</strong>.</p>
+            <p class="tutorial pe">* Luego de cifrar solo debes copiar y mandarle a tu contacto el mensaje con su clave ;)</p>
+            <hr />
+            <h3>Ahora, ¿Que quieres hacer?</h3>
+            <button type="button" class="btn btn-primary btn-lg" id="cifrar">Cifrar</button>
+            <button type="button" class="btn btn-success btn-lg" id="descifra">Descifrar</button>
+        </div>
+        <!--Contenedor de decifrar y cifrar-->
+        <div id="container" class="none">
+        <br />
+        <label><b>Ingresa tu clave: </b></label><input type="number" class="form-control" id="desplazar" min="0" placeholder=" Ingrese un numero" />
+        <p class="mensaje_error" id="mensaje_error"></p>
+        <hr />
         <fieldset>
           <h3>   Escribe tu mensaje    </h3>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Escribe un mensaje aqui" required></textarea>
-          <p id="errorText"></p>
-          <br>
-          <button class="btn btn-primary" id="cifrador">Cifrar</button> 
-          <button class="btn btn-success" id="decifrador">Decifrar</button>   
-          <button class="btn btn-danger" id="volver">Volver</button>
-          <hr>
-
+          <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Escribe un mensaje aqui" ></textarea>
+          <p class="mensaje_error" id="error_text"></p>
+          <br />
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary" id="cifrador">Cifrar</button> 
+            <button type="button" class="btn btn-success" id="decifrador">Decifrar</button>   
+            <button type="button" class="btn btn-danger" id="volver">Volver</button>
+          </div>  
+            <hr/>
         </fieldset> 
-        <div id="share-buttons">
-          <b><i>Compartir: </i></b>
-          <!-- Facebook -->
-          <a href="http://www.facebook.com/sharer.php?u=https://bellaaguirre.github.io/lim-2018-05-bc-core-am-cipher/src/" target="_blank">
-              <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-          </a>
-          <!-- Google+ -->
-          <a href="https://plus.google.com/share?url=https://bellaaguirre.github.io/lim-2018-05-bc-core-am-cipher/src" target="_blank">
-              <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
-          </a>
-          <!-- Twitter -->
-          <a href="https://twitter.com/share?url=https://bellaaguirre.github.io/lim-2018-05-bc-core-am-cipher/src" target="_blank">
-              <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-          </a>
+        <!--botones de redes sociales-->
+          <div id="share_buttons">
+            <b><i>Compartir: </i></b>
+            <!-- Facebook -->
+            <a href="http://www.facebook.com/sharer.php?u=https://bellaaguirre.github.io/lim-2018-05-bc-core-am-cipher/src/" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+            </a>
+            <!-- Google+ -->
+            <a href="https://plus.google.com/share?url=https://bellaaguirre.github.io/lim-2018-05-bc-core-am-cipher/src" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/share?url=https://bellaaguirre.github.io/lim-2018-05-bc-core-am-cipher/src" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+            </a>
+          </div>
         </div>
       </form>
-    <div id="root"></div>
-    </div>
     </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

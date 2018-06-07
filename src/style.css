@@ -1,65 +1,64 @@
 h1{
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Bree Serif', serif;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Bree Serif', serif;
 }
 h3{
-    margin-top: 0px;
-    font-size: 20px;
+  margin-top: 0px;
+  font-size: 20px;
 }
 h5{
-    text-align: left;
+  text-align: left;
 }
 form{
-    padding: 1em;
-    background: #FCF3CF;
-    border: 1px solid #c1c1c1;
-    margin-top: 5rem;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    -webkit-box-shadow: -9px 9px 10px 0px rgba(0,0,0,0.29);
-    -moz-box-shadow: -9px 9px 10px 0px rgba(0,0,0,0.29);
-    box-shadow: -9px 9px 10px 0px rgba(0,0,0,0.29);
+  padding: 1em;
+  background: #FCF3CF;
+  border: 1px solid #c1c1c1;
+  margin-top: 5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  -webkit-box-shadow: -9px 9px 10px 0px rgba(0,0,0,0.29);
+  -moz-box-shadow: -9px 9px 10px 0px rgba(0,0,0,0.29);
+  box-shadow: -9px 9px 10px 0px rgba(0,0,0,0.29);
 }
 textarea{
-    text-align: center;
-    border-radius: 18px;
-    margin-bottom: 10px;
-    width: 50%;
-    resize: none;
-
+  text-align: center;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  width: 50%;
+  resize: none;
 }
 form, fieldset{
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: black;
 }
 fieldset{
-    border: 0px;
-    margin-top: 0px;
+  border: 0px;
+  margin-top: 0px;
 }
 boton{
-    text-align: right;
+  text-align: right;
 }
 label{
-    font-size: 16px;
+  font-size: 16px;
 }
 body{
-    background-image: url(https://ined21.com/wp-content/uploads/FONDO-DE-RESERVA-DE-GARANT%C3%8DA-EDUCATIVA-INED21.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url(https://ined21.com/wp-content/uploads/FONDO-DE-RESERVA-DE-GARANT%C3%8DA-EDUCATIVA-INED21.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #share-buttons img{
-    padding: 5px;
-    border: 0;
-    box-shadow: 0;
-    height: 45px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  height: 45px;
 }
 #share-buttons{
-    text-align: right;
+  text-align: right;
 }
 p{
-    color:red;
+  color:red;
 }
