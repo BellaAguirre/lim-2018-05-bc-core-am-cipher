@@ -7,9 +7,6 @@ h3{
   margin-top: 0px;
   font-size: 20px;
 }
-h5{
-  text-align: left;
-}
 form{
   padding: 1em;
   background: #FCF3CF;
@@ -38,27 +35,34 @@ fieldset{
   border: 0px;
   margin-top: 0px;
 }
-boton{
-  text-align: right;
-}
-label{
-  font-size: 16px;
-}
 body{
   background-image: url(https://ined21.com/wp-content/uploads/FONDO-DE-RESERVA-DE-GARANT%C3%8DA-EDUCATIVA-INED21.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-#share-buttons img{
+#share_buttons img{
   padding: 5px;
   border: 0;
   box-shadow: 0;
-  height: 45px;
+  height: 35px;
 }
-#share-buttons{
+#share_buttons{
   text-align: right;
 }
-p{
-  color:red;
+.mensaje_error{
+  color: red;
+}
+.tutorial{
+  text-align: left;
+  font-size: 14px;
+}
+.pe{
+  font-size: 12px;
+}
+.none{
+  display: none;
+}
+.block{
+    display: block;
 }
