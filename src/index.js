@@ -38,10 +38,15 @@ btnDescifra.addEventListener('click', () => {
 });
 //Evento click del boton de volver
 btnVolver.addEventListener('click', () => {
+    offset.value = '';
+    string.value = '';
+    errorText.innerHTML = '';
+    mensajeError.innerHTML = '';
     formPregunta.classList.remove('none');
     formPregunta.classList.add('block');
     formCifrador.classList.remove('block');
     formCifrador.classList.add('none');
+    document.forms['myform']['mensaje'].readOnly = false;
 });
 //evento click para cifrar un mensaje
 botonCifrar.addEventListener('click', function(e){
