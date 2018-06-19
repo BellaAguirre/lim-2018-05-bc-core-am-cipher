@@ -41,16 +41,16 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
-#share_buttons img{
+#share-buttons img{
   padding: 5px;
   border: 0;
   box-shadow: 0;
   height: 35px;
 }
-#share_buttons{
+#share-buttons{
   text-align: right;
 }
-.mensaje_error{
+.mensaje-error{
   color: red;
 }
 .tutorial{

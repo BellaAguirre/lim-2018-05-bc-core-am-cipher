@@ -7,19 +7,19 @@ window.cipher = {
   },
   refactorFor:(offset, string) => {
     // funcion para el recorrido del for
-    let resultado = "";
+    let stringCipher = '';
     offset = parseInt(offset);  
-    for (let i = 0; i < string.length; i++){
-      let caracter1 = string.charCodeAt(i);
-      if (caracter1 >= 65 && caracter1 <= 90){// evaluando si el valor esta entre 65 y 90 en el codigo ASCII(mayusculas)
-        resultado += String.fromCharCode((caracter1 - 65 + offset) % 26 + 65);
-      } else if (caracter1 >= 97 && caracter1 <= 122){// evaluando si el valor esta entre 97 y 122 en el codigo ASCII (minusculas)
-        resultado += String.fromCharCode((caracter1 - 97 + offset) % 26 + 97);
+    for ( i in string){
+      const valueString = string.charCodeAt(i);
+      if (valueString >= 65 && valueString <= 90){// evaluando si el valor esta entre 65 y 90 en el codigo ASCII(mayusculas)
+        stringCipher += String.fromCharCode((valueString - 65 + offset) % 26 + 65);
+      } else if (valueString >= 97 && valueString <= 122){// evaluando si el valor esta entre 97 y 122 en el codigo ASCII (minusculas)
+        stringCipher += String.fromCharCode((valueString - 97 + offset) % 26 + 97);
       } else {
-        resultado += String.fromCharCode(caracter1);// caso contrario solo añadimos la letra de este valor 
+        stringCipher += String.fromCharCode(valueString);// caso contrario solo añadimos la letra de este valor 
     }
   }
-    return resultado;
+    return stringCipher;
   },
   //funcion del hacking edition retorna un objeto con dos funciones
   createCipherWithOffset: (offset) => {

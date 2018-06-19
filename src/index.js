@@ -1,39 +1,33 @@
 //variables offset y string
-let offset = document.getElementById('desplazar');
-let string = document.getElementById('mensaje');
+const offset = document.getElementById('desplazar');
+const string = document.getElementById('mensaje');
 let resultFinal;//varible para mostrar el resultado de cifrar o descifrar
 //botones de inicio
-let btnCifra = document.getElementById('cifrar');
-let btnDescifra = document.getElementById('descifra');
+const btnCifra = document.getElementById('cifrar');
+const btnDescifra = document.getElementById('descifra');
 //form
-let formPregunta = document.getElementById('container_menu');
-let formCifrador = document.getElementById('container');
+const formPregunta = document.getElementById('container-menu');
+const formCifrador = document.getElementById('container');
 // Botones dentro del formulario
-let botonCifrar = document.getElementById('cifrador');
-let botonDecifrar = document.getElementById('decifrador');
-let btnVolver = document.getElementById('volver');
+const botonCifrar = document.getElementById('cifrador');
+const botonDecifrar = document.getElementById('decifrador');
+const btnVolver = document.getElementById('volver');
 //variables para mensaje error
-let mensajeError = document.getElementById('mensaje_error');
-let errorText = document.getElementById('error_text');
+const mensajeError = document.getElementById('mensaje-error');
+const errorText = document.getElementById('error-text');
 
 //Evento click de los botones del menu
 btnCifra.addEventListener('click', () => {
-    formPregunta.classList.remove('block');
-    formPregunta.classList.add('none');
-    formCifrador.classList.remove('none');
-    formCifrador.classList.add('block');
-    botonDecifrar.classList.remove('block');
-    botonDecifrar.classList.add('none');
+    formPregunta.classList.replace('block','none');
+    formCifrador.classList.replace('none','block');
+    botonDecifrar.classList.replace('block','none');
     botonCifrar.classList.add('block');
 });
 
 btnDescifra.addEventListener('click', () => {
-    formPregunta.classList.remove('block');
-    formPregunta.classList.add('none');
-    formCifrador.classList.remove('none');
-    formCifrador.classList.add('block');
-    botonCifrar.classList.remove('block');
-    botonCifrar.classList.add('none');
+    formPregunta.classList.replace('block','none');
+    formCifrador.classList.replace('none','block');
+    botonCifrar.classList.replace('block','none');
     botonDecifrar.classList.add('block');
 });
 //Evento click del boton de volver
@@ -42,10 +36,8 @@ btnVolver.addEventListener('click', () => {
     string.value = '';
     errorText.innerHTML = '';
     mensajeError.innerHTML = '';
-    formPregunta.classList.remove('none');
-    formPregunta.classList.add('block');
-    formCifrador.classList.remove('block');
-    formCifrador.classList.add('none');
+    formPregunta.classList.replace('none','block');
+    formCifrador.classList.replace('block','none');
     document.forms['myform']['mensaje'].readOnly = false;
 });
 //evento click para cifrar un mensaje
